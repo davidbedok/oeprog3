@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TextEditEx">
+</Property><Property Name="Solution File" Value="E:\workspacecsharp\TextEditEx\TextEditEx.sln">
+</Property><Property Name="User Options File" Value="E:\workspacecsharp\TextEditEx\TextEditEx.suo">
+</Property><Property Name="Date" Value="2010. szeptember 14.">
+</Property><Property Name="Time" Value="18:56">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TextEditEx.sln" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx.sln">
+</Event><Event ErrorLevel="0" Project="" Source="TextEditEx.suo" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx.suo">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\TextEditEx.csproj" Description="Project file successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\TextEditEx.csproj">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\CTextEditEx.cs" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\CTextEditEx.cs">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\Form1.cs" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\Form1.cs">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\Form1.Designer.cs" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\Program.cs" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\Program.cs">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\Properties\Resources.Designer.cs" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\Properties\Settings.Designer.cs" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\Properties\Settings.settings" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\Form1.resx" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\Form1.resx">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\Properties\Resources.resx" Description="File successfully backed up as E:\workspacecsharp\TextEditEx\Backup\TextEditEx\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\TextEditEx.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TextEditEx" Source="TextEditEx\TextEditEx.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TextEditEx.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TextEditEx.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TextEditEx" Source="TextEditEx\TextEditEx.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

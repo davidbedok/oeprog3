@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="QListBoxMulti">
+</Property><Property Name="Solution File" Value="E:\workspacecsharp\VEP\QListBoxMulti\QListBoxMulti.sln">
+</Property><Property Name="User Options File" Value="E:\workspacecsharp\VEP\QListBoxMulti\QListBoxMulti.suo">
+</Property><Property Name="Date" Value="2012. március 8.">
+</Property><Property Name="Time" Value="18:40">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="QListBoxMulti.sln" Description="File successfully backed up as E:\workspacecsharp\VEP\QListBoxMulti\Backup\QListBoxMulti.sln">
+</Event><Event ErrorLevel="0" Project="" Source="QListBoxMulti.suo" Description="File successfully backed up as E:\workspacecsharp\VEP\QListBoxMulti\Backup\QListBoxMulti.suo">
+</Event><Event ErrorLevel="0" Project="QListBoxMulti" Source="QListBoxMulti\QListBoxMulti.csproj" Description="Project file successfully backed up as E:\workspacecsharp\VEP\QListBoxMulti\Backup\QListBoxMulti\QListBoxMulti.csproj">
+</Event><Event ErrorLevel="0" Project="QListBoxMulti" Source="QListBoxMulti\QListBoxUC.cs" Description="File successfully backed up as E:\workspacecsharp\VEP\QListBoxMulti\Backup\QListBoxMulti\QListBoxUC.cs">
+</Event><Event ErrorLevel="0" Project="QListBoxMulti" Source="QListBoxMulti\QListBoxUC.Designer.cs" Description="File successfully backed up as E:\workspacecsharp\VEP\QListBoxMulti\Backup\QListBoxMulti\QListBoxUC.Designer.cs">
+</Event><Event ErrorLevel="0" Project="QListBoxMulti" Source="QListBoxMulti\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\workspacecsharp\VEP\QListBoxMulti\Backup\QListBoxMulti\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="QListBoxMulti" Source="QListBoxMulti\QListBoxUC.resx" Description="File successfully backed up as E:\workspacecsharp\VEP\QListBoxMulti\Backup\QListBoxMulti\QListBoxUC.resx">
+</Event><Event ErrorLevel="0" Project="QListBoxMulti" Source="QListBoxMulti\QListBoxMulti.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="QListBoxMulti" Source="QListBoxMulti\QListBoxMulti.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="QListBoxMulti.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="QListBoxMulti.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="QListBoxMulti" Source="QListBoxMulti\QListBoxMulti.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

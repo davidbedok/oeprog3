@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UserAddressLine">
+</Property><Property Name="Solution File" Value="E:\workspacecsharp\HP_Controls\UserAddressLine\UserAddressLine.sln">
+</Property><Property Name="User Options File" Value="E:\workspacecsharp\HP_Controls\UserAddressLine\UserAddressLine.suo">
+</Property><Property Name="Date" Value="2010. szeptember 21.">
+</Property><Property Name="Time" Value="17:58">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="UserAddressLine.sln" Description="File successfully backed up as E:\workspacecsharp\HP_Controls\UserAddressLine\Backup\UserAddressLine.sln">
+</Event><Event ErrorLevel="0" Project="" Source="UserAddressLine.suo" Description="File successfully backed up as E:\workspacecsharp\HP_Controls\UserAddressLine\Backup\UserAddressLine.suo">
+</Event><Event ErrorLevel="0" Project="UserAddressLine" Source="UserAddressLine\UserAddressLine.csproj" Description="Project file successfully backed up as E:\workspacecsharp\HP_Controls\UserAddressLine\Backup\UserAddressLine\UserAddressLine.csproj">
+</Event><Event ErrorLevel="0" Project="UserAddressLine" Source="UserAddressLine\AddressData.cs" Description="File successfully backed up as E:\workspacecsharp\HP_Controls\UserAddressLine\Backup\UserAddressLine\AddressData.cs">
+</Event><Event ErrorLevel="0" Project="UserAddressLine" Source="UserAddressLine\AddressData.Designer.cs" Description="File successfully backed up as E:\workspacecsharp\HP_Controls\UserAddressLine\Backup\UserAddressLine\AddressData.Designer.cs">
+</Event><Event ErrorLevel="0" Project="UserAddressLine" Source="UserAddressLine\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\workspacecsharp\HP_Controls\UserAddressLine\Backup\UserAddressLine\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="UserAddressLine" Source="UserAddressLine\AddressData.resx" Description="File successfully backed up as E:\workspacecsharp\HP_Controls\UserAddressLine\Backup\UserAddressLine\AddressData.resx">
+</Event><Event ErrorLevel="0" Project="UserAddressLine" Source="UserAddressLine\AddressLine.ico" Description="File successfully backed up as E:\workspacecsharp\HP_Controls\UserAddressLine\Backup\UserAddressLine\AddressLine.ico">
+</Event><Event ErrorLevel="0" Project="UserAddressLine" Source="UserAddressLine\UserAddressLine.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="UserAddressLine" Source="UserAddressLine\UserAddressLine.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="UserAddressLine.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="UserAddressLine.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UserAddressLine" Source="UserAddressLine\UserAddressLine.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

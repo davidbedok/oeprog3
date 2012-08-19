@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexNumbers", "ComplexNumbers\ComplexNumbers.csproj", "{A3AE6725-116A-4B70-BCC5-06F94AF502E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHarness", "TestHarness\TestHarness.csproj", "{7074F245-C6D8-455A-8EEF-D8B232AA4AFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsNewAttributes", "WhatsNewAttributes\WhatsNewAttributes.csproj", "{A6C45153-E4A4-4DCE-9146-220FB8695D41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3AE6725-116A-4B70-BCC5-06F94AF502E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AE6725-116A-4B70-BCC5-06F94AF502E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AE6725-116A-4B70-BCC5-06F94AF502E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AE6725-116A-4B70-BCC5-06F94AF502E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7074F245-C6D8-455A-8EEF-D8B232AA4AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7074F245-C6D8-455A-8EEF-D8B232AA4AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7074F245-C6D8-455A-8EEF-D8B232AA4AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7074F245-C6D8-455A-8EEF-D8B232AA4AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C45153-E4A4-4DCE-9146-220FB8695D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C45153-E4A4-4DCE-9146-220FB8695D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C45153-E4A4-4DCE-9146-220FB8695D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C45153-E4A4-4DCE-9146-220FB8695D41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
