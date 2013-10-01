@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="VisualCompiler">
+</Property><Property Name="Solution File" Value="F:\workspacecsharp\oeprog3\VisualCompiler\VisualCompiler.sln">
+</Property><Property Name="User Options File" Value="F:\workspacecsharp\oeprog3\VisualCompiler\VisualCompiler.suo">
+</Property><Property Name="Date" Value="2013. október 1.">
+</Property><Property Name="Time" Value="20:14">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="VisualCompiler.sln" Description="File successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\VisualCompiler.sln">
+</Event><Event ErrorLevel="0" Project="" Source="VisualCompiler.suo" Description="File successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\VisualCompiler.suo">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="VisualCompiler.csproj" Description="Project file successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\VisualCompiler.csproj">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="MainForm.cs" Description="File successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="MainForm.Designer.cs" Description="File successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="Program.cs" Description="File successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\Program.cs">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="MainForm.resx" Description="File successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="Properties\Resources.resx" Description="File successfully backed up as F:\workspacecsharp\oeprog3\VisualCompiler\Backup1\Properties\Resources.resx">
+</Event><Event ErrorLevel="1" Project="VisualCompiler" Source="VisualCompiler.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="VisualCompiler.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="VisualCompiler" Source="VisualCompiler.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="VisualCompiler.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="VisualCompiler.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="VisualCompiler" Source="VisualCompiler.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
