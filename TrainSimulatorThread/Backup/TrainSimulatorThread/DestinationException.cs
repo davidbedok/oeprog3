@@ -9,13 +9,23 @@ namespace TrainSimulatorThread
     {
 
         private string trainShape;
-        private ConsoleColor trainColor;
+        private ConsoleColor color;
+
+        public DestinationException( string trainShape, ConsoleColor color ) {
+            this.trainShape = trainShape;
+            this.color = color;
+        }
+
+        public override string ToString()
+        {
+            return "Train: " + this.trainShape;
+        }
 
         public override string Message
         {
             get
             {
-                return "Train: " + this.trainShape;
+                return this.ToString();
             }
         }
 
@@ -23,13 +33,8 @@ namespace TrainSimulatorThread
         {
             get
             {
-                return this.trainColor;
+                return this.color;
             }
-        }
-
-        public DestinationException( string trainShape, ConsoleColor trainColor ) {
-            this.trainShape = trainShape;
-            this.trainColor = trainColor;
         }
 
     }

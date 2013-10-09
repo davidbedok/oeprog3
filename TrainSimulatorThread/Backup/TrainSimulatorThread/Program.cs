@@ -10,11 +10,32 @@ namespace TrainSimulatorThread
     {
         private static readonly int NUMBER_OF_TRAIN = 5;
 
-        private static void Main(string[] args)
+        public static void drawField( int trainLength )
         {
-            Console.WriteLine("Train Simulator Application");
-            Program.drawField(14);
+            System.Console.SetCursorPosition(1,1);
+            for (int i = 0; i < (Train.MAX_LEFT + trainLength); i++)
+            {
+                System.Console.Write("-");
+            }
+            for (int i = 0; i < Program.NUMBER_OF_TRAIN; i++)
+            {
+                System.Console.SetCursorPosition(0, i+2);
+                System.Console.Write("|");
+                System.Console.SetCursorPosition(Train.MAX_LEFT + 1 + trainLength, i + 2);
+                System.Console.Write("|");
+            }
+            System.Console.SetCursorPosition(1, Program.NUMBER_OF_TRAIN + 2);
+            for (int i = 0; i < (Train.MAX_LEFT + trainLength); i++)
+            {
+                System.Console.Write("-");
+            }
+        }
 
+        public static void Main(string[] args)
+        {
+            System.Console.WriteLine("Train Simulator Application");
+            Program.drawField(14);
+            
             Random rand = new Random();
 
             Train[] iTrains = new Train[NUMBER_OF_TRAIN];
@@ -25,37 +46,15 @@ namespace TrainSimulatorThread
             iTrains[4] = new Train(6, "[O][O][5][EEE>", ConsoleColor.Red, rand);
 
             Thread[] iThreads = new Thread[NUMBER_OF_TRAIN];
-
+           
             for (int i = 0; i < NUMBER_OF_TRAIN; i++)
             {
                 iThreads[i] = new Thread(iTrains[i].run);
                 iThreads[i].IsBackground = true;
                 iThreads[i].Start();
             }
-
+             
             System.Console.ReadKey();
         }
-
-        private static void drawField( int trainLength )
-        {
-            Console.SetCursorPosition(1,1);
-            for (int i = 0; i < (Train.DESTINATION_POS + trainLength); i++)
-            {
-                Console.Write("-");
-            }
-            for (int i = 0; i < Program.NUMBER_OF_TRAIN; i++)
-            {
-                Console.SetCursorPosition(0, i+2);
-                Console.Write("|");
-                Console.SetCursorPosition(Train.DESTINATION_POS + 1 + trainLength, i + 2);
-                Console.Write("|");
-            }
-            System.Console.SetCursorPosition(1, Program.NUMBER_OF_TRAIN + 2);
-            for (int i = 0; i < (Train.DESTINATION_POS + trainLength); i++)
-            {
-                System.Console.Write("-");
-            }
-        }
-
     }
 }
