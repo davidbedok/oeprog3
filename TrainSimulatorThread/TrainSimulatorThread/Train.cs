@@ -61,31 +61,25 @@ namespace TrainSimulatorThread
         protected void print(ConsoleColor color)
         {
             Train.printTrain(this.position, this.track, this.shape, color);
-            // Console.SetCursorPosition(this.position, this.track);
-            // Console.ForegroundColor = color;
-            // Console.Write(this.shape);
         }
 
         [MethodImpl(MethodImplOptions.Synchronized)]
         protected static void printTrain(int position, int track, string shape, ConsoleColor color)
         {
-            // Train.printConsole(this.track, this.position, this.color, this.shape);
-            Console.SetCursorPosition(position, track);
+            Console.SetCursorPosition(position, track + 1);
             Console.ForegroundColor = color;
             Console.Write(shape);
         }
 
-        /*
-        [MethodImpl(MethodImplOptions.Synchronized)]
-        public static void printConsole(int posTop, int posLeft, ConsoleColor color, string shape ){
-            System.Console.SetCursorPosition(posLeft,posTop);
-            System.Console.ForegroundColor = color;
-            System.Console.Write(shape);
-        } */
-
-        public override string ToString()
+        public static Train[] createTrains( Random rand, int numberOfTrains )
         {
-            return this.shape;
+            Train[] trains = new Train[numberOfTrains];
+            trains[0] = new Train(1, "[O][O][1][AAA>", ConsoleColor.Blue, rand);
+            trains[1] = new Train(2, "[O][O][2][BBB>", ConsoleColor.Green, rand);
+            trains[2] = new Train(3, "[O][O][3][CCC>", ConsoleColor.White, rand);
+            trains[3] = new Train(4, "[O][O][4][DDD>", ConsoleColor.Yellow, rand);
+            trains[4] = new Train(5, "[O][O][5][EEE>", ConsoleColor.Red, rand);
+            return trains;
         }
 
     }
