@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="MNB" soapui-version="4.6.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="MNBArfolyamServiceSoap12" type="wsdl" bindingName="{http://www.mnb.hu/webservices/}MNBArfolyamServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.mnb.hu/arfolyamok.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetCurrencies" name="GetCurrencies" bindingOperationName="GetCurrencies" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetCurrencies/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrenciesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetCurrencyUnits" name="GetCurrencyUnits" bindingOperationName="GetCurrencyUnits" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetCurrencyUnits>
+         <web:currencyNames>EUR,USD</web:currencyNames>
+      </web:GetCurrencyUnits>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrencyUnitsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetCurrentExchangeRates" name="GetCurrentExchangeRates" bindingOperationName="GetCurrentExchangeRates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetCurrentExchangeRates/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrentExchangeRatesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetDateInterval" name="GetDateInterval" bindingOperationName="GetDateInterval" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetDateInterval/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetDateIntervalRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetExchangeRates" name="GetExchangeRates" bindingOperationName="GetExchangeRates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetExchangeRates>
+         <web:startDate>2010-10-10</web:startDate>
+        <web:endDate>2010-10-16</web:endDate>
+         <web:currencyNames>EUR,USD</web:currencyNames>
+      </web:GetExchangeRates>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetExchangeRatesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetInfo" name="GetInfo" bindingOperationName="GetInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetInfo/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetInfoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="MNBArfolyamServiceSoap" type="wsdl" bindingName="{http://www.mnb.hu/webservices/}MNBArfolyamServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://www.mnb.hu/arfolyamok.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.mnb.hu/arfolyamok.asmx?WSDL"><con:part><con:url>http://www.mnb.hu/arfolyamok.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.mnb.hu/webservices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.mnb.hu/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>MNB curreny exchange rate webservice.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.mnb.hu/webservices/">
+      <s:element name="GetInfo">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentExchangeRates">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetCurrentExchangeRatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentExchangeRatesResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExchangeRates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="startDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="endDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="currencyNames" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExchangeRatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExchangeRatesResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDateInterval">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetDateIntervalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDateIntervalResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrencies">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetCurrenciesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrenciesResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrencyUnits">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="currencyNames" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrencyUnitsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrencyUnitsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfo"/>
+  </wsdl:message>
+  <wsdl:message name="GetInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrentExchangeRatesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentExchangeRates"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrentExchangeRatesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentExchangeRatesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetExchangeRatesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExchangeRates"/>
+  </wsdl:message>
+  <wsdl:message name="GetExchangeRatesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExchangeRatesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetDateIntervalSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDateInterval"/>
+  </wsdl:message>
+  <wsdl:message name="GetDateIntervalSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDateIntervalResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrenciesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrencies"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrenciesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrenciesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyUnitsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrencyUnits"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrencyUnitsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrencyUnitsResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="MNBArfolyamServiceSoap">
+    <wsdl:operation name="GetInfo">
+      <wsdl:input message="tns:GetInfoSoapIn"/>
+      <wsdl:output message="tns:GetInfoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentExchangeRates">
+      <wsdl:input message="tns:GetCurrentExchangeRatesSoapIn"/>
+      <wsdl:output message="tns:GetCurrentExchangeRatesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangeRates">
+      <wsdl:input message="tns:GetExchangeRatesSoapIn"/>
+      <wsdl:output message="tns:GetExchangeRatesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetDateInterval">
+      <wsdl:input message="tns:GetDateIntervalSoapIn"/>
+      <wsdl:output message="tns:GetDateIntervalSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencies">
+      <wsdl:input message="tns:GetCurrenciesSoapIn"/>
+      <wsdl:output message="tns:GetCurrenciesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyUnits">
+      <wsdl:input message="tns:GetCurrencyUnitsSoapIn"/>
+      <wsdl:output message="tns:GetCurrencyUnitsSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MNBArfolyamServiceSoap" type="tns:MNBArfolyamServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetInfo">
+      <soap:operation soapAction="http://www.mnb.hu/webservices/GetInfo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentExchangeRates">
+      <soap:operation soapAction="http://www.mnb.hu/webservices/GetCurrentExchangeRates" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangeRates">
+      <soap:operation soapAction="http://www.mnb.hu/webservices/GetExchangeRates" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDateInterval">
+      <soap:operation soapAction="http://www.mnb.hu/webservices/GetDateInterval" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencies">
+      <soap:operation soapAction="http://www.mnb.hu/webservices/GetCurrencies" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyUnits">
+      <soap:operation soapAction="http://www.mnb.hu/webservices/GetCurrencyUnits" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MNBArfolyamServiceSoap12" type="tns:MNBArfolyamServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetInfo">
+      <soap12:operation soapAction="http://www.mnb.hu/webservices/GetInfo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentExchangeRates">
+      <soap12:operation soapAction="http://www.mnb.hu/webservices/GetCurrentExchangeRates" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchangeRates">
+      <soap12:operation soapAction="http://www.mnb.hu/webservices/GetExchangeRates" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDateInterval">
+      <soap12:operation soapAction="http://www.mnb.hu/webservices/GetDateInterval" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencies">
+      <soap12:operation soapAction="http://www.mnb.hu/webservices/GetCurrencies" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrencyUnits">
+      <soap12:operation soapAction="http://www.mnb.hu/webservices/GetCurrencyUnits" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MNBArfolyamService">
+    <wsdl:documentation>MNB curreny exchange rate webservice.</wsdl:documentation>
+    <wsdl:port name="MNBArfolyamServiceSoap" binding="tns:MNBArfolyamServiceSoap">
+      <soap:address location="http://www.mnb.hu/arfolyamok.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="MNBArfolyamServiceSoap12" binding="tns:MNBArfolyamServiceSoap12">
+      <soap12:address location="http://www.mnb.hu/arfolyamok.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetCurrencies" name="GetCurrencies" bindingOperationName="GetCurrencies" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrencies/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/GetCurrencies"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetCurrencyUnits" name="GetCurrencyUnits" bindingOperationName="GetCurrencyUnits" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrencyUnits>
+         <!--Optional:-->
+         <web:currencyNames>?</web:currencyNames>
+      </web:GetCurrencyUnits>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/GetCurrencyUnits"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetCurrentExchangeRates" name="GetCurrentExchangeRates" bindingOperationName="GetCurrentExchangeRates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrentExchangeRates/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/GetCurrentExchangeRates"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetDateInterval" name="GetDateInterval" bindingOperationName="GetDateInterval" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetDateInterval/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/GetDateInterval"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetExchangeRates" name="GetExchangeRates" bindingOperationName="GetExchangeRates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetExchangeRates>
+         <!--Optional:-->
+         <web:startDate>?</web:startDate>
+         <!--Optional:-->
+         <web:endDate>?</web:endDate>
+         <!--Optional:-->
+         <web:currencyNames>?</web:currencyNames>
+      </web:GetExchangeRates>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/GetExchangeRates"/></con:call></con:operation><con:operation isOneWay="false" action="http://www.mnb.hu/webservices/GetInfo" name="GetInfo" bindingOperationName="GetInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetInfo/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.mnb.hu/webservices/GetInfo"/></con:call></con:operation></con:interface><con:testSuite name="MNBArfolyamServiceSoap12 TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCurrencies TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetCurrencies"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap12</con:interface><con:operation>GetCurrencies</con:operation><con:request name="GetCurrencies"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetCurrencies/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrenciesRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCurrencyUnits TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetCurrencyUnits"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap12</con:interface><con:operation>GetCurrencyUnits</con:operation><con:request name="GetCurrencyUnits"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetCurrencyUnits>
+         <!--Optional:-->
+         <web:currencyNames>?</web:currencyNames>
+      </web:GetCurrencyUnits>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrencyUnitsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCurrentExchangeRates TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetCurrentExchangeRates"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap12</con:interface><con:operation>GetCurrentExchangeRates</con:operation><con:request name="GetCurrentExchangeRates"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetCurrentExchangeRates/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetCurrentExchangeRatesRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetDateInterval TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetDateInterval"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap12</con:interface><con:operation>GetDateInterval</con:operation><con:request name="GetDateInterval"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetDateInterval/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetDateIntervalRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetExchangeRates TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetExchangeRates"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap12</con:interface><con:operation>GetExchangeRates</con:operation><con:request name="GetExchangeRates"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetExchangeRates>
+         <!--Optional:-->
+         <web:startDate>?</web:startDate>
+         <!--Optional:-->
+         <web:endDate>?</web:endDate>
+         <!--Optional:-->
+         <web:currencyNames>?</web:currencyNames>
+      </web:GetExchangeRates>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetExchangeRatesRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetInfo TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetInfo"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap12</con:interface><con:operation>GetInfo</con:operation><con:request name="GetInfo"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.mnb.hu/webservices/">
+   <soap:Header/>
+   <soap:Body>
+      <web:GetInfo/>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/MNBArfolyamServiceSoap/GetInfoRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite name="MNBArfolyamServiceSoap TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCurrencies TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetCurrencies"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap</con:interface><con:operation>GetCurrencies</con:operation><con:request name="GetCurrencies"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrencies/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/GetCurrencies"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCurrencyUnits TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetCurrencyUnits"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap</con:interface><con:operation>GetCurrencyUnits</con:operation><con:request name="GetCurrencyUnits"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrencyUnits>
+         <!--Optional:-->
+         <web:currencyNames>?</web:currencyNames>
+      </web:GetCurrencyUnits>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/GetCurrencyUnits"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCurrentExchangeRates TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetCurrentExchangeRates"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap</con:interface><con:operation>GetCurrentExchangeRates</con:operation><con:request name="GetCurrentExchangeRates"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrentExchangeRates/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/GetCurrentExchangeRates"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetDateInterval TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetDateInterval"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap</con:interface><con:operation>GetDateInterval</con:operation><con:request name="GetDateInterval"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetDateInterval/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/GetDateInterval"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetExchangeRates TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetExchangeRates"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap</con:interface><con:operation>GetExchangeRates</con:operation><con:request name="GetExchangeRates"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetExchangeRates>
+         <!--Optional:-->
+         <web:startDate>?</web:startDate>
+         <!--Optional:-->
+         <web:endDate>?</web:endDate>
+         <!--Optional:-->
+         <web:currencyNames>?</web:currencyNames>
+      </web:GetExchangeRates>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/GetExchangeRates"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetInfo TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetInfo"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MNBArfolyamServiceSoap</con:interface><con:operation>GetInfo</con:operation><con:request name="GetInfo"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.mnb.hu/arfolyamok.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.mnb.hu/webservices/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetInfo/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://www.mnb.hu/webservices/GetInfo"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/></con:soapui-project>
