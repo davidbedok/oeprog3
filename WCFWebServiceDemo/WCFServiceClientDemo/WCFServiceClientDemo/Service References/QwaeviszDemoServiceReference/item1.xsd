@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://david.bedok.hu/qwaeviszDemoService" elementFormDefault="qualified" targetNamespace="http://david.bedok.hu/qwaeviszDemoService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model" />
+  <xs:element name="NumberOfCars">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NumberOfCarsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NumberOfCarsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AverageEngineCapacity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model" minOccurs="0" name="manufacturer" type="q1:Manufacturer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AverageEngineCapacityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AverageEngineCapacityResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindCar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model" minOccurs="0" name="manufacturer" type="q2:Manufacturer" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindCarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model" minOccurs="0" name="FindCarResult" nillable="true" type="q3:CarType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

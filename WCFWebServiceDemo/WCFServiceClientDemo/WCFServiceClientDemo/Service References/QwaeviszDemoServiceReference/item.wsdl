@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://david.bedok.hu/qwaeviszDemoService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://david.bedok.hu/qwaeviszDemoService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://david.bedok.hu/qwaeviszDemoService/Imports">
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd0" namespace="http://david.bedok.hu/qwaeviszDemoService" />
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="QwaeviszDemoService_NumberOfCars_InputMessage">
+    <wsdl:part name="parameters" element="tns:NumberOfCars" />
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_NumberOfCars_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NumberOfCarsResponse" />
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_AverageEngineCapacity_InputMessage">
+    <wsdl:part name="parameters" element="tns:AverageEngineCapacity" />
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_AverageEngineCapacity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AverageEngineCapacityResponse" />
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_FindCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindCar" />
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_FindCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindCarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="QwaeviszDemoService">
+    <wsdl:operation name="NumberOfCars">
+      <wsdl:input wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/NumberOfCars" message="tns:QwaeviszDemoService_NumberOfCars_InputMessage" />
+      <wsdl:output wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/NumberOfCarsResponse" message="tns:QwaeviszDemoService_NumberOfCars_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AverageEngineCapacity">
+      <wsdl:input wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/AverageEngineCapacity" message="tns:QwaeviszDemoService_AverageEngineCapacity_InputMessage" />
+      <wsdl:output wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/AverageEngineCapacityResponse" message="tns:QwaeviszDemoService_AverageEngineCapacity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindCar">
+      <wsdl:input wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCar" message="tns:QwaeviszDemoService_FindCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCarResponse" message="tns:QwaeviszDemoService_FindCar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

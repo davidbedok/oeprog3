@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Manufacturer">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ROVER" />
+      <xs:enumeration value="TOYOTA" />
+      <xs:enumeration value="OPEL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Manufacturer" nillable="true" type="tns:Manufacturer" />
+  <xs:complexType name="CarType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Dimension" nillable="true" type="tns:Dimension" />
+      <xs:element minOccurs="0" name="EngineCapacity" type="xs:double" />
+      <xs:element minOccurs="0" name="Fuel" type="tns:Fuel" />
+      <xs:element minOccurs="0" name="Manufacturer" type="tns:Manufacturer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CarType" nillable="true" type="tns:CarType" />
+  <xs:complexType name="Dimension">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Height" type="xs:int" />
+      <xs:element minOccurs="0" name="Length" type="xs:int" />
+      <xs:element minOccurs="0" name="Width" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dimension" nillable="true" type="tns:Dimension" />
+  <xs:simpleType name="Fuel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GASOLINE" />
+      <xs:enumeration value="DIESEL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Fuel" nillable="true" type="tns:Fuel" />
+</xs:schema>
