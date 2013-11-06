@@ -11,7 +11,7 @@ namespace WCFServiceLibraryDemo.Holder
 
         private List<Car> items;
 
-        public Cars()
+        private Cars()
         {
             this.items = new List<Car>();
             this.add(Manufacturer.OPEL, "Zafira", 2.0, Fuel.DIESEL, 455, 170, 205);
@@ -37,7 +37,7 @@ namespace WCFServiceLibraryDemo.Holder
             return this.items.Where(x => x.Manufacturer == manufacturer).Average(x => x.EngineCapacity);
         }
 
-        public Car findCar(Manufacturer manufacturer, String name)
+        public Car find(Manufacturer manufacturer, String name)
         {
             Car ret = null;
             IEnumerable<Car> results = this.items.Where(x => x.Manufacturer == manufacturer && x.Name.Equals(name));

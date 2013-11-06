@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="22880cc9-d7cd-451f-9726-1707c2a8ad37" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6196d987-0128-4511-8739-499d2715f55d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -18,15 +18,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="f3429232-3ca6-44e8-8ca3-7088474d35a7" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd2" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="f0842c59-c146-4564-9813-88cc049bfb4a" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?disco" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="91463491-86c4-426f-a0af-02772314ccc0" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd0" />
-    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="e610ce7b-1bea-4fe8-baa6-c2a810179935" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl=wsdl0" />
-    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="523650f4-1ebc-4624-a9e2-3a2d740126f6" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd1" />
-    <MetadataFile FileName="QwaeviszDemoService.wsdl" MetadataType="Wsdl" ID="5e2c1a97-5ac2-4c7a-8e89-a9eff4db0a94" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="b18a76d3-d4cc-49b2-9f23-f909e3995eb2" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd2" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="d91897a5-885f-4a5e-8b6c-d570d0b17b60" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd0" />
+    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="c8c6519a-c1dd-4c53-b040-f9cf52061b29" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl=wsdl0" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="17984223-c55a-4223-ba33-1bbdf12258d4" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd1" />
+    <MetadataFile FileName="QwaeviszDemoService.wsdl" MetadataType="Wsdl" ID="fba24e20-2d9e-45a5-b091-95b619210c66" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -77,9 +77,6 @@
     <WCFMetadataStorage Include="Service References\QwaeviszDemoServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\QwaeviszDemoServiceReference\item.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\QwaeviszDemoServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>

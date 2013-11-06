@@ -24,7 +24,7 @@ namespace WCFServiceLibraryDemo
 
         public Car findCar(Manufacturer manufacturer, String name)
         {
-            return Cars.getInstance().findCar(manufacturer, name);
+            return Cars.getInstance().find(manufacturer, name);
         }
 
     }

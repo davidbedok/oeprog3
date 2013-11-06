@@ -12,9 +12,12 @@ namespace WCFServiceClientDemo
         {
             QwaeviszDemoServiceClient client = new QwaeviszDemoServiceClient();
             int numberOfCars = client.NumberOfCars();
+
             Console.WriteLine("Number of cars: " + numberOfCars);
             double avg = client.AverageEngineCapacity(Manufacturer.TOYOTA);
             Console.WriteLine("Avg: " + avg);
+
+
             CarType car = client.FindCar(Manufacturer.ROVER, "45i");
             Console.WriteLine("CarName: " + car.CarName);
             Console.WriteLine("EngineCapacity: " + car.EngineCapacity);

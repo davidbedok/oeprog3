@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="WCFQwaeviszDemo" resourceRoot="${projectDir}" soapui-version="4.6.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="BasicHttpBinding_QwaeviszDemoService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_QwaeviszDemoService" soapVersion="1_1" anonymous="optional" definition="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl"><con:part><con:url>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="QwaeviszDemoService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://david.bedok.hu/qwaeviszDemoService" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://david.bedok.hu/qwaeviszDemoService" location="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl=wsdl0"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_QwaeviszDemoService" type="i0:QwaeviszDemoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="NumberOfCars">
+      <soap:operation soapAction="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/NumberOfCars" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AverageEngineCapacity">
+      <soap:operation soapAction="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/AverageEngineCapacity" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindCar">
+      <soap:operation soapAction="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCar" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="QwaeviszDemoService">
+    <wsdl:port name="BasicHttpBinding_QwaeviszDemoService" binding="tns:BasicHttpBinding_QwaeviszDemoService">
+      <soap:address location="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://david.bedok.hu/qwaeviszDemoService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://david.bedok.hu/qwaeviszDemoService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://david.bedok.hu/qwaeviszDemoService/Imports">
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd0" namespace="http://david.bedok.hu/qwaeviszDemoService"/>
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="QwaeviszDemoService_NumberOfCars_InputMessage">
+    <wsdl:part name="parameters" element="tns:NumberOfCars"/>
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_NumberOfCars_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NumberOfCarsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_AverageEngineCapacity_InputMessage">
+    <wsdl:part name="parameters" element="tns:AverageEngineCapacity"/>
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_AverageEngineCapacity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AverageEngineCapacityResponse"/>
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_FindCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindCar"/>
+  </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_FindCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindCarResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="QwaeviszDemoService">
+    <wsdl:operation name="NumberOfCars">
+      <wsdl:input wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/NumberOfCars" message="tns:QwaeviszDemoService_NumberOfCars_InputMessage"/>
+      <wsdl:output wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/NumberOfCarsResponse" message="tns:QwaeviszDemoService_NumberOfCars_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="AverageEngineCapacity">
+      <wsdl:input wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/AverageEngineCapacity" message="tns:QwaeviszDemoService_AverageEngineCapacity_InputMessage"/>
+      <wsdl:output wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/AverageEngineCapacityResponse" message="tns:QwaeviszDemoService_AverageEngineCapacity_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="FindCar">
+      <wsdl:input wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCar" message="tns:QwaeviszDemoService_FindCar_InputMessage"/>
+      <wsdl:output wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCarResponse" message="tns:QwaeviszDemoService_FindCar_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://david.bedok.hu/qwaeviszDemoService" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://david.bedok.hu/qwaeviszDemoService">
+  <xs:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model"/>
+  <xs:element name="NumberOfCars">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NumberOfCarsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NumberOfCarsResult" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AverageEngineCapacity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="manufacturer" type="q1:Manufacturer" xmlns:q1="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AverageEngineCapacityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AverageEngineCapacityResult" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindCar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="manufacturer" type="q2:Manufacturer" xmlns:q2="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model"/>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindCarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FindCarResult" nillable="true" type="q3:CarType" xmlns:q3="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model">
+  <xs:simpleType name="Manufacturer">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ROVER"/>
+      <xs:enumeration value="TOYOTA"/>
+      <xs:enumeration value="OPEL"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Manufacturer" nillable="true" type="tns:Manufacturer"/>
+  <xs:complexType name="CarType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CarName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Dimension" nillable="true" type="tns:Dimension"/>
+      <xs:element minOccurs="0" name="EngineCapacity" type="xs:double"/>
+      <xs:element minOccurs="0" name="Fuel" type="tns:Fuel"/>
+      <xs:element minOccurs="0" name="Manufacturer" type="tns:Manufacturer"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CarType" nillable="true" type="tns:CarType"/>
+  <xs:complexType name="Dimension">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Height" type="xs:int"/>
+      <xs:element minOccurs="0" name="Length" type="xs:int"/>
+      <xs:element minOccurs="0" name="Width" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dimension" nillable="true" type="tns:Dimension"/>
+  <xs:simpleType name="Fuel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GASOLINE"/>
+      <xs:enumeration value="DIESEL"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Fuel" nillable="true" type="tns:Fuel"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/AverageEngineCapacity" name="AverageEngineCapacity" bindingOperationName="AverageEngineCapacity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:qwa="http://david.bedok.hu/qwaeviszDemoService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <qwa:AverageEngineCapacity>
+         <qwa:manufacturer>TOYOTA</qwa:manufacturer>
+      </qwa:AverageEngineCapacity>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/AverageEngineCapacity"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCar" name="FindCar" bindingOperationName="FindCar" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:qwa="http://david.bedok.hu/qwaeviszDemoService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <qwa:FindCar>
+         <qwa:manufacturer>TOYOTA</qwa:manufacturer>
+         <qwa:name>Verso</qwa:name>
+      </qwa:FindCar>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCar"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/NumberOfCars" name="NumberOfCars" bindingOperationName="NumberOfCars" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:qwa="http://david.bedok.hu/qwaeviszDemoService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <qwa:NumberOfCars/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/NumberOfCars"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="BasicHttpBinding_QwaeviszDemoService TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AverageEngineCapacity TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="AverageEngineCapacity"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_QwaeviszDemoService</con:interface><con:operation>AverageEngineCapacity</con:operation><con:request name="AverageEngineCapacity"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:qwa="http://david.bedok.hu/qwaeviszDemoService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <qwa:AverageEngineCapacity>
+         <!--Optional:-->
+         <qwa:manufacturer>?</qwa:manufacturer>
+      </qwa:AverageEngineCapacity>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/AverageEngineCapacity"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="FindCar TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="FindCar"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_QwaeviszDemoService</con:interface><con:operation>FindCar</con:operation><con:request name="FindCar"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:qwa="http://david.bedok.hu/qwaeviszDemoService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <qwa:FindCar>
+         <!--Optional:-->
+         <qwa:manufacturer>?</qwa:manufacturer>
+         <!--Optional:-->
+         <qwa:name>?</qwa:name>
+      </qwa:FindCar>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCar"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="NumberOfCars TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="NumberOfCars"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_QwaeviszDemoService</con:interface><con:operation>NumberOfCars</con:operation><con:request name="NumberOfCars"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:qwa="http://david.bedok.hu/qwaeviszDemoService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <qwa:NumberOfCars/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:wsaConfig action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/NumberOfCars"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/></con:soapui-project>
