@@ -43,6 +43,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Error\CarNotFoundError.cs" />
     <Compile Include="Holder\Cars.cs" />
     <Compile Include="IQwaeviszDemoService.cs" />
     <Compile Include="Model\Car.cs" />
@@ -53,7 +54,9 @@
     <Compile Include="QwaeviszDemoService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

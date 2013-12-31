@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd0" namespace="http://david.bedok.hu/qwaeviszDemoService" />
       <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Model" />
+      <xsd:import schemaLocation="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Error" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="QwaeviszDemoService_NumberOfCars_InputMessage">
@@ -25,6 +26,9 @@
   <wsdl:message name="QwaeviszDemoService_FindCar_OutputMessage">
     <wsdl:part name="parameters" element="tns:FindCarResponse" />
   </wsdl:message>
+  <wsdl:message name="QwaeviszDemoService_FindCar_CarNotFoundErrorFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Error" name="detail" element="q1:CarNotFoundError" />
+  </wsdl:message>
   <wsdl:portType name="QwaeviszDemoService">
     <wsdl:operation name="NumberOfCars">
       <wsdl:input wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/NumberOfCars" message="tns:QwaeviszDemoService_NumberOfCars_InputMessage" />
@@ -37,6 +41,7 @@
     <wsdl:operation name="FindCar">
       <wsdl:input wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCar" message="tns:QwaeviszDemoService_FindCar_InputMessage" />
       <wsdl:output wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCarResponse" message="tns:QwaeviszDemoService_FindCar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCarCarNotFoundErrorFault" name="CarNotFoundErrorFault" message="tns:QwaeviszDemoService_FindCar_CarNotFoundErrorFault_FaultMessage" />
     </wsdl:operation>
   </wsdl:portType>
 </wsdl:definitions>

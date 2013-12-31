@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using WCFServiceLibraryDemo.Model;
+using WCFServiceLibraryDemo.Error;
 
 namespace WCFServiceLibraryDemo
 {
@@ -19,6 +20,7 @@ namespace WCFServiceLibraryDemo
         double averageEngineCapacity(Manufacturer manufacturer);
 
         [OperationContract(Name = "FindCar")]
+        [FaultContract(typeof(CarNotFoundError))]
         Car findCar(Manufacturer manufacturer, String name);
 
     }

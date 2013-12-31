@@ -224,6 +224,67 @@ namespace WCFServiceClientDemo.QwaeviszDemoServiceReference {
         DIESEL = 1,
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CarNotFoundError", Namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Error")]
+    [System.SerializableAttribute()]
+    public partial class CarNotFoundError : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WCFServiceClientDemo.QwaeviszDemoServiceReference.Manufacturer ManufacturerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WCFServiceClientDemo.QwaeviszDemoServiceReference.Manufacturer Manufacturer {
+            get {
+                return this.ManufacturerField;
+            }
+            set {
+                if ((this.ManufacturerField.Equals(value) != true)) {
+                    this.ManufacturerField = value;
+                    this.RaisePropertyChanged("Manufacturer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://david.bedok.hu/qwaeviszDemoService", ConfigurationName="QwaeviszDemoServiceReference.QwaeviszDemoService")]
     public interface QwaeviszDemoService {
@@ -238,6 +299,8 @@ namespace WCFServiceClientDemo.QwaeviszDemoServiceReference {
         double AverageEngineCapacity(WCFServiceClientDemo.QwaeviszDemoServiceReference.Manufacturer manufacturer);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCar", ReplyAction="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCarResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(WCFServiceClientDemo.QwaeviszDemoServiceReference.CarNotFoundError), Action="http://david.bedok.hu/qwaeviszDemoService/QwaeviszDemoService/FindCarCarNotFoundE" +
+            "rrorFault", Name="CarNotFoundError", Namespace="http://schemas.datacontract.org/2004/07/WCFServiceLibraryDemo.Error")]
         WCFServiceClientDemo.QwaeviszDemoServiceReference.CarType FindCar(WCFServiceClientDemo.QwaeviszDemoServiceReference.Manufacturer manufacturer, string name);
     }
     

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using WCFServiceLibraryDemo.Model;
+using WCFServiceLibraryDemo.Error;
+using System.ServiceModel;
 
 namespace WCFServiceLibraryDemo.Holder
 {
@@ -44,6 +46,10 @@ namespace WCFServiceLibraryDemo.Holder
             if (results.Count() > 0)
             {
                 ret = results.First();
+            }
+            else
+            {
+                throw CarNotFoundError.create(manufacturer, name);
             }
             return ret;
         }

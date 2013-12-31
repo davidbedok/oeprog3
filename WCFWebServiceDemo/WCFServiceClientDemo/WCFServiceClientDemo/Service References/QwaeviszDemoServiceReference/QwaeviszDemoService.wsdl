@@ -30,6 +30,9 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="CarNotFoundErrorFault">
+        <soap:fault use="literal" name="CarNotFoundErrorFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="QwaeviszDemoService">

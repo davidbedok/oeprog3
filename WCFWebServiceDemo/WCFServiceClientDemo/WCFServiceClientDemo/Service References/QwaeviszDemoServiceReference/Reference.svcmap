@@ -23,6 +23,7 @@
   <Metadata>
     <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="b18a76d3-d4cc-49b2-9f23-f909e3995eb2" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd2" />
     <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="d91897a5-885f-4a5e-8b6c-d570d0b17b60" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd0" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="3056d0a2-6f72-45a1-9047-4ed68381917f" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd3" />
     <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="c8c6519a-c1dd-4c53-b040-f9cf52061b29" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl=wsdl0" />
     <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="17984223-c55a-4223-ba33-1bbdf12258d4" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?xsd=xsd1" />
     <MetadataFile FileName="QwaeviszDemoService.wsdl" MetadataType="Wsdl" ID="fba24e20-2d9e-45a5-b091-95b619210c66" SourceId="1" SourceUrl="http://localhost:8732/Design_Time_Addresses/WCFServiceLibraryDemo/Service1/?wsdl" />

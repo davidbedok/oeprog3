@@ -68,6 +68,9 @@
     <None Include="Service References\QwaeviszDemoServiceReference\item2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\QwaeviszDemoServiceReference\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\QwaeviszDemoServiceReference\QwaeviszDemoService.wsdl" />
     <None Include="Service References\QwaeviszDemoServiceReference\WCFServiceClientDemo.QwaeviszDemoServiceReference.CarType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
