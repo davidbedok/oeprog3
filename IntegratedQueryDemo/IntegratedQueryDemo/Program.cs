@@ -13,6 +13,8 @@ namespace IntegratedQueryDemo
         {
             Program.testSchool();
             Program.testXml();
+
+            Console.ReadKey();
         }
 
         private static void testSchool()

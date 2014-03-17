@@ -31,6 +31,7 @@ namespace DelegateDemo
             Console.WriteLine("Add + Random (undefined result): " + machine.process(Program.summation, Program.randomRegister));
             Console.WriteLine("Add + Mock (result: 12): " + machine.process(Program.summation, Program.mockRegister));
 
+            Console.ReadKey();
         }
 
         private static int summation(MachineRegister register, String message)

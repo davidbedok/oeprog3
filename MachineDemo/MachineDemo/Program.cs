@@ -8,6 +8,7 @@ namespace MachineDemo
 {
     public class Program
     {
+
         private static void Main(string[] args)
         {
             Machine machine = new Machine();
@@ -21,6 +22,7 @@ namespace MachineDemo
             machine.process(Program.subtraction, "Subtraction A = B - C");
             Console.WriteLine(machine);
 
+            Console.ReadKey();
         }
 
         private static int summation( MachineRegister register, String message )
@@ -36,7 +38,6 @@ namespace MachineDemo
             register.A = register.B - register.C;
             return register.A;
         }
-
 
     }
 }
