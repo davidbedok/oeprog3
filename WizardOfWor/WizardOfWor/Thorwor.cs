@@ -10,7 +10,7 @@ namespace WizardOfWor
     {
 
         public Thorwor(Maze maze)
-            : base(maze, ConsoleColor.Red, 3, 6, 'T', 40)
+            : base(maze, ConsoleColor.Red, 3, 6, 'T', 20)
         {
         }
 

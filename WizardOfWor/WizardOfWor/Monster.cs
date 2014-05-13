@@ -23,6 +23,7 @@ namespace WizardOfWor
 
         private bool hide;
         private MazeField position;
+        private Direction lastDirection;
 
         public Monster(Maze maze, ConsoleColor color, int minSpeed, int maxSpeed, char shape, int hidePercent)
         {
@@ -35,6 +36,7 @@ namespace WizardOfWor
             this.hidePercent = hidePercent;
             this.hide = false;
             this.position = this.maze.getRandomPosition();
+            this.lastDirection = Direction.UP;
         }
 
         public void run()
@@ -51,31 +53,64 @@ namespace WizardOfWor
 
         private void move()
         {
-            int x = this.position.X;
-            int y = this.position.Y;
+            int column = this.position.Column;
+            int row = this.position.Row;
+            Direction direction = Direction.DOWN;
+            Direction oppositeDirection = this.oppositeDirection(lastDirection);
             do
             {
-                x = this.position.X;
-                y = this.position.Y;
-                Direction direction = (Direction)this.rand.Next(4);
+                int limit = 4;
+                do
+                {
+                    direction = (Direction)this.rand.Next(4);
+                    limit--;
+                } while (direction == oppositeDirection && limit > 0);
+                
+                column = this.position.Column;
+                row = this.position.Row;
+
                 switch (direction)
                 {
                     case Direction.UP:
-                        x = x - 1;
+                        column = column - 1;
                         break;
                     case Direction.LEFT:
-                        y = y - 1;
+                        row = row - 1;
                         break;
                     case Direction.RIGHT:
-                        y = y + 1;
+                        row = row + 1;
                         break;
                     case Direction.DOWN:
-                        x = x + 1;
+                        column = column + 1;
                         break;
                 }
-            } while (this.maze.isWall(y, x));
-            this.position.X = x;
-            this.position.Y = y;
+            } while (this.maze.isWall(row, column));
+            this.lastDirection = direction;
+            this.maze.releasePosition(this.position);
+            this.position.Column = column;
+            this.position.Row = row;
+            this.maze.reservePosition(this.position);
+        }
+
+        private Direction oppositeDirection(Direction direction)
+        {
+            Direction opposite = Direction.UP;
+            switch (direction)
+            {
+                case Direction.UP:
+                    opposite = Direction.DOWN;
+                    break;
+                case Direction.LEFT:
+                    opposite = Direction.RIGHT;
+                    break;
+                case Direction.RIGHT:
+                    opposite = Direction.LEFT;
+                    break;
+                case Direction.DOWN:
+                    opposite = Direction.UP;
+                    break;
+            }
+            return opposite;
         }
 
         private void calcHide()
@@ -83,9 +118,18 @@ namespace WizardOfWor
             if (this.hidePercent != 0)
             {
                 int percent = this.rand.Next(100);
-                if (percent < this.hidePercent)
+                if (this.hide)
                 {
-                    this.hide = !this.hide;
+                    if ((100 - percent) < this.hidePercent)
+                    {
+                        this.hide = !this.hide;
+                    }
+                }
+                else {
+                    if (percent < this.hidePercent)
+                    {
+                        this.hide = !this.hide;
+                    } 
                 }
             }
         }
@@ -93,7 +137,7 @@ namespace WizardOfWor
         private void print(ConsoleColor color)
         {
             if (!this.hide)
-            {
+            {                                   
                 Monster.printMonster(this.position, color, shape);
             }
         }
@@ -101,7 +145,7 @@ namespace WizardOfWor
         [MethodImpl(MethodImplOptions.Synchronized)]
         protected static void printMonster(MazeField position, ConsoleColor color, char shape)
         {
-            Console.SetCursorPosition(position.X, position.Y);
+            Console.SetCursorPosition(position.Column, position.Row);
             Console.ForegroundColor = color;
             Console.Write(shape);
         }

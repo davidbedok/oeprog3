@@ -8,10 +8,10 @@ namespace WizardOfWor
 {
     public enum TypeOfMonsters
     {
-        Burwor,
-        Garwor,
-        Thorwor,
-        Worluk,
-        WizardOfWor
+        Burwor = 0,
+        Garwor = 1,
+        Thorwor = 2,
+        Worluk = 3,
+        WizardOfWor = 4
     }
 }

@@ -9,25 +9,30 @@ namespace WizardOfWor
     public class MazeField
     {
 
-        private int x;
-        private int y;
+        private int column;
+        private int row;
 
-        public int X
+        public int Column
         {
-            get { return this.x; }
-            set { this.x = value; }
+            get { return this.column; }
+            set { this.column = value; }
         }
 
-        public int Y
+        public int Row
         {
-            get { return this.y; }
-            set { this.y = value; }
+            get { return this.row; }
+            set { this.row = value; }
         }
 
-        public MazeField(int x, int y)
+        public MazeField(int column, int row)
         {
-            this.x = x;
-            this.y = y;
+            this.column = column;
+            this.row = row;
+        }
+
+        public override string ToString()
+        {
+            return "["+this.column+"x"+this.row+"]";
         }
 
     }

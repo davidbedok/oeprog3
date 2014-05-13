@@ -10,7 +10,7 @@ namespace WizardOfWor
     {
 
         public Garwor(Maze maze)
-            : base(maze, ConsoleColor.Yellow, 2, 5, 'G', 20)
+            : base(maze, ConsoleColor.Yellow, 2, 5, 'G', 5)
         {
         }
 

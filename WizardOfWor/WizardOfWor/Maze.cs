@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,41 +11,56 @@ namespace WizardOfWor
 {
     public class Maze
     {
-        private const int WIDTH = 20;
-        private const int HEIGHT = 20;
-        private const int NUMBER_OF_WALLS = 100;
+        private const String START_SOUND = "music\\start.wav";
+        private const String ATTRACT_SOUND = "music\\attract.wav";
+
+        private const int HEIGHT = 22;
+        private const int WIDTH = 60;
+        private const int NUMBER_OF_WALLS = 1200;
 
         private readonly Random rand;
         private readonly Boolean[,] fields;
 
-        private readonly int numberOfMonsters;
+        private readonly Dictionary<TypeOfMonsters, Int32> numberOfMonsters;
+        private readonly int totalNumberOfMonsters;
         private readonly Monster[] monsters;
 
-        public Maze(Random rand, int numberOfMonsters)
+        public Maze(Random rand, Dictionary<TypeOfMonsters, Int32> numberOfMonsters)
         {
             this.rand = rand;
             this.numberOfMonsters = numberOfMonsters;
-            
-            this.fields = new Boolean[Maze.WIDTH, Maze.HEIGHT];
+            this.totalNumberOfMonsters = this.calcTotalNumberOfMonsters();
+            this.fields = new Boolean[Maze.HEIGHT, Maze.WIDTH];
             this.init();
-            this.monsters = new Monster[numberOfMonsters];
+            this.monsters = new Monster[totalNumberOfMonsters];
             this.createMonsters();
+        }
+
+        private int calcTotalNumberOfMonsters()
+        {
+            int count = 0;
+            foreach (KeyValuePair<TypeOfMonsters, Int32> pair in this.numberOfMonsters)
+            {
+                count += pair.Value;
+            }
+            return count;
         }
 
         private void init()
         {
             int numOfWalls = 0;
-            for (int i = 0; i < this.fields.GetLength(0); i++)
+            for (int row = 0; row < Maze.HEIGHT; row++)
             {
-                for (int j = 0; j < this.fields.GetLength(1); j++)
+                for (int column = 0; column < Maze.WIDTH; column++)
                 {
-                    if (i == 0 || j == 0 || i == this.fields.GetLength(0) - 1 || j == this.fields.GetLength(1) - 1)
+                    if (row == 0 || column == 0 || row == Maze.HEIGHT - 1 || column == Maze.WIDTH - 1)
                     {
-                        this.fields[i, j] = true;
+                        this.fields[row, column] = true;
                     }
                     else if (numOfWalls < Maze.NUMBER_OF_WALLS)
                     {
-                        this.fields[i, j] = this.rand.Next(10) > 7;
+                        this.fields[row, column] = this.rand.Next(10) > 7;
+                        numOfWalls++;
                     }
                 }
             }
@@ -52,14 +69,14 @@ namespace WizardOfWor
         public void draw()
         {
             Console.SetCursorPosition(0, 0);
-            for (int i = 0; i < this.fields.GetLength(0); i++)
+            for (int row = 0; row < Maze.HEIGHT; row++)
             {
-                for (int j = 0; j < this.fields.GetLength(1); j++)
+                for (int column = 0; column < Maze.WIDTH; column++)
                 {
-                    if (this.fields[i, j])
+                    if (this.fields[row, column])
                     {
-                        // Console.Write((char)177);
-                        Console.Write('H');
+                        Console.Write((char)177);
+                        //Console.Write('H');
                     }
                     else
                     {
@@ -72,22 +89,22 @@ namespace WizardOfWor
 
         public MazeField getRandomPosition()
         {
-            int x = 0;
-            int y = 0;
+            int column = 0;
+            int row = 0;
             do
             {
-                x = this.rand.Next(this.fields.GetLength(0));
-                y = this.rand.Next(this.fields.GetLength(1));
-            } while (this.isWall(x, y));
-            return new MazeField(x, y);
+                row = this.rand.Next(Maze.HEIGHT);
+                column = this.rand.Next(Maze.WIDTH);
+            } while (this.isWall(row, column));
+            return new MazeField(column, row);
         }
 
-        public bool isWall( int x, int y )
+        public bool isWall( int row, int column )
         {
             bool valid = true;
-            if (x >= 0 && x < this.fields.GetLength(0) && y >= 0 && y < this.fields.GetLength(1))
+            if (row >= 0 && row < Maze.HEIGHT && column >= 0 && column < Maze.WIDTH)
             {
-                valid = this.fields[x, y];
+                valid = this.fields[row, column];
             }
             return valid;
         }
@@ -99,34 +116,40 @@ namespace WizardOfWor
 
         private void createMonsters()
         {
-            this.monsters[0] = new WizardOfWor(this);
-            this.monsters[1] = new Worluk(this);
-            this.monsters[2] = new Worluk(this);
-
-            for (int i = 3; i < this.numberOfMonsters; i++)
+            int i = 0;
+            foreach (KeyValuePair<TypeOfMonsters, Int32> pair in numberOfMonsters)
             {
-                TypeOfMonsters type = (TypeOfMonsters)this.rand.Next(3);
                 Monster monster = null;
-                switch (type)
+                for (int j = 0; j < pair.Value; j++)
                 {
-                    case TypeOfMonsters.Burwor:
-                        monster = new Burwor(this);
-                        break;
-                    case TypeOfMonsters.Garwor:
-                        monster = new Garwor(this);
-                        break;
-                    case TypeOfMonsters.Thorwor:
-                        monster = new Thorwor(this);
-                        break;
+                    switch (pair.Key)
+                    {
+                        case TypeOfMonsters.Burwor:
+                            monster = new Burwor(this);
+                            break;
+                        case TypeOfMonsters.Garwor:
+                            monster = new Garwor(this);
+                            break;
+                        case TypeOfMonsters.Thorwor:
+                            monster = new Thorwor(this);
+                            break;
+                        case TypeOfMonsters.Worluk:
+                            monster = new Worluk(this);
+                            break;
+                        case TypeOfMonsters.WizardOfWor:
+                            monster = new WizardOfWor(this);
+                            break;
+                    }
+                    this.monsters[i++] = monster; 
                 }
-                this.monsters[i] = monster; 
             }
         }
 
         public void start()
         {
-            Thread[] threads = new Thread[this.numberOfMonsters];
-            for (int i = 0; i < this.numberOfMonsters; i++)
+            this.musicStart();
+            Thread[] threads = new Thread[this.totalNumberOfMonsters];
+            for (int i = 0; i < this.totalNumberOfMonsters; i++)
             {
                 threads[i] = new Thread(this.monsters[i].run);
                 threads[i].IsBackground = true;
@@ -134,5 +157,28 @@ namespace WizardOfWor
             }
         }
 
+        private void musicStart()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(Maze.START_SOUND);
+            simpleSound.Play();
+        }
+
+        public void musicAttract()
+        {
+            SoundPlayer simpleSound = new SoundPlayer(Maze.ATTRACT_SOUND);
+            simpleSound.Play();
+        }
+
+        [MethodImpl(MethodImplOptions.Synchronized)]
+        public void releasePosition(MazeField field)
+        {
+            this.fields[field.Row, field.Column] = false;
+        }
+
+        [MethodImpl(MethodImplOptions.Synchronized)]
+        public void reservePosition(MazeField field)
+        {
+            this.fields[field.Row, field.Column] = true;
+        }
     }
 }
