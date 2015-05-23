@@ -8,7 +8,7 @@ namespace ThreadDemo
     public class Worker
     {
 
-        private int parameter;
+        private readonly int parameter;
 
         public Worker(int parameter)
         {

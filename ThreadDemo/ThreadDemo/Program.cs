@@ -15,10 +15,10 @@ namespace ThreadDemo
         private static void Main(string[] args)
         {
             Random rand = new Random();
-            Console.WriteLine(Program.printThreadInfo(Thread.CurrentThread));
+            // Console.WriteLine(Program.printThreadInfo(Thread.CurrentThread));
             // Program.simpleThread(rand);
             // Program.simpleThreadWithParam(rand);
-            // Program.threadInClassWithParam(rand);
+            Program.threadInClassWithParam(rand);
             // Program.threadPool();
             Console.ReadKey();
         }
